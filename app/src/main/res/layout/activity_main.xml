@@ -6,10 +6,30 @@
     android:layout_height="match_parent"
     tools:context="com.hello.kaiser.fragment.MainActivity">
 
+    <android.support.design.widget.TabLayout
+        android:id="@+id/view_tab"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="one" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="two" />
+
+    </android.support.design.widget.TabLayout>
+
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/view_tab"
         android:background="@android:color/darker_gray" />
 
 </RelativeLayout>
